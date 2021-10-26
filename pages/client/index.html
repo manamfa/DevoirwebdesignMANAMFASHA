@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion du magazin</title>
+    <link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../assets/css/all.min.css">
+</head>
+<body>
+
+
+    <div class="container-fluid">
+        <div class="row flex-nowrap">
+            <!-- sidebar -->
+            <div class="col-auto col-md-3 col-xl-2 bg-dark">
+                <div class="sticky-top d-flex flex-column text-white min-vh-100">
+                    <a href="/" class="text-white text-decoration-none text-center py-1">
+                        <i class="fab fa-github fa-2x"></i>
+                        <span class="ms-2 fs-3 d-none d-sm-inline">Gestion du magazin</span>
+                    </a>
+                    <hr>
+                    <ul class="nav nav-pills flex-column mb-sm-auto mb-0" id="menu">
+                        <li class="nav-item">
+                            <a href="../../pages/index.html" class="nav-link p-2 text-white active">
+                                <i class="fas fa-home"></i>
+                                <span class="ms-1 d-none d-sm-inline">Acceuil</span>
+                            </a>
+                        </li>
+                       
+
+                        <li class="nav-item">
+                            <a href="../../pages/client/index.html" class="nav-link p-2 text-white">
+                                <i class="fas fa-briefcase"></i>
+                                <span class="ms-1 d-none d-sm-inline">Client</span>
+                            </a>
+                        </li>
+
+                        
+                    </ul>
+                </div>
+            </div>
+
+
+            <!-- content -->
+            <div class="col py-3">
+                <!-- navbar -->
+                <div class="d-flex justify-content-end px-3 pt-1">
+                    <!-- message -->
+                    <div class="dropdown">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#modelId" class="btn btn-sm text-white rounded-circle position-relative me-4"
+                            id="dropdownMessage" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: blue;">
+                            <span class="fas fa-envelope"></span>
+                            <span class="position-absolute top-0 start-100 translate-middle 
+                                            badge rounded-pill btn-danger">+2</span>
+                        </a>
+                        <ul class="dropdown-menu text-small shadow">
+                            <li>
+                                <a href="#" class="dropdown-item">Mon message ...</a>
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown-item">Mon message 2...</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- user -->
+                    <div class="dropdown">
+                        <a href="#" class="d-flex align-items-center text-dark text-decoration-none
+                                        dropdown-toggle"
+                            id="dropdownUser" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="../../assets/photos/profileold.jpg" alt="user picture" height="30" weight="30" srcset="">
+                            <span class="d-none d-sm-inline mx-1">Name user</span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
+                            <li>
+                                <a href="#" class="dropdown-item">Profile</a>
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown-item">Parametre</a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown-item">Deconnecter</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <!-- contenu -->
+                <div>
+                    <h1 style="text-align: center;"><i><u>Identification du Client</u></i></h1>
+
+
+                    <div class="text-md-end">
+                        <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modelId">Nouveau Client</button>
+                    </div>
+                    <table class="table table-bordered table-condensed table-body-center">
+                        <thead>
+                            <tr>
+                                
+                                <th scope="col">NOM</th>
+                                <th scope="col">PRENOM</th>
+                                <th scope="col">EMAIL</th>
+                                <th scope="col">TELEPHONE</th>
+                                <th scope="col">SEXE</th>   
+                                <th scope="col">ACTION</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                               
+                                <td>NIYONKURU</td>
+                                <td>Jean</td>
+                                <td>niyonkurujean@gmail.com</td>
+                                <td>+257 61615254</td>
+                                <td>M</td>
+                                
+                                <td>
+                                    <form action="" method="post">
+                                        <button class="btn btn-danger btn-sm"><i class="fas fa-trash"></i></button>
+                                        <a href="#" data-bs-toggle="modal" data-bs-target="#modelId" class="btn  btn-primary ms-1 btn-sm"><i class="fas fa-pen"></i></a>
+                                    </form>
+                                </td>
+                            </tr>
+                            <tr>
+                   
+                                <td>NIYOMUGISHA</td>
+                                <td>Jeanne</td>
+                                <td>niyonkuru@gmail.com</td>
+                                <td>+257 69632587</td>
+                                <td>F</td>
+                                
+                                <td>
+                                    <form action="" method="post">
+                                        <button class="btn btn-danger btn-sm"><i class="fas fa-trash"></i></button>
+                                        <a href="#" data-bs-toggle="modal" data-bs-target="#modelId" class="btn  btn-primary ms-1 btn-sm"><i class="fas fa-pen"></i></a>
+                                    </form>
+                                </td>
+                            </tr>
+                            <tr>
+                                
+                                <td>NDAYISABA</td>
+                                <td>Login</td>
+                                <td>ndayisaba@gmail.com</td>
+                                <td>+257 71716225</td>
+                                <td>M</td>
+                                
+                                <td>
+                                    <form action="" method="post">
+                                        <button class="btn btn-danger btn-sm"><i class="fas fa-trash"></i></button>
+                                        <a href="#" data-bs-toggle="modal" data-bs-target="#modelId" class="btn  btn-primary ms-1 btn-sm"><i class="fas fa-pen"></i></a>
+                                    </form>
+                                </td>
+                            </tr>
+                            <tr>
+                               
+                                <td>MANISHIMWE</td>
+                                <td>Ella</td>
+                                <td>manishimwe@gmail.com</td>
+                                <td>+257 61615254</td>
+                                <td>F</td>
+                                
+                                <td>
+                                    <form action="" method="post">
+                                        <button class="btn btn-danger btn-sm"><i class="fas fa-trash"></i></button>
+                                        <a href="#" data-bs-toggle="modal" data-bs-target="#modelId" class="btn  btn-primary ms-1 btn-sm"><i class="fas fa-pen"></i></a>
+                                    </form>
+                                </td>
+                            </tr>
+                            <tr>
+                               
+                                <td>NDAYISABA</td>
+                                <td>Claudine</td>
+                                <td>ndayisaba@gmail.com</td>
+                                <td>+257 61205693</td>
+                                <td>F</td>
+                                
+                                <td>
+                                    <form action="" method="post">
+                                        <button class="btn btn-danger btn-sm"><i class="fas fa-trash"></i></button>
+                                        <a href="#" data-bs-toggle="modal" data-bs-target="#modelId" class="btn  btn-primary ms-1 btn-sm"><i class="fas fa-pen"></i></a>
+                                    </form>
+                                </td>
+                            </tr>
+                            <tr>
+                               
+                                <td>IRADUKUNDA</td>
+                                <td>Alcene</td>
+                                <td>iradukunda@gmail.com</td>
+                                <td>+257 61205693</td>
+                                <td>M</td>
+                                
+                                <td>
+                                    <form action="" method="post">
+                                        <button class="btn btn-danger btn-sm"><i class="fas fa-trash"></i></button>
+                                        <a href="#" data-bs-toggle="modal" data-bs-target="#modelId" class="btn  btn-primary ms-1 btn-sm"><i class="fas fa-pen"></i></a>
+                                    </form>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+
+
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header" style="text-align: center;">
+                                    <h5  class="modal-title" >Veillez remplir</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form action="" method="get">
+
+
+                                          <div class="mb-3">
+                                            <label for="" class="form-label">NOM</label>
+                                            <input type="text" class="form-control form-control-sm" name="" id="" aria-describedby="helpId" placeholder="">
+                                            <small id="helpId" class="form-text text-muted">name</small>
+                                          </div>
+
+                                          <div class="mb-3">
+                                            <label for="" class="form-label">PRENOM</label>
+                                            <input type="text" class="form-control form-control-sm" name="" id="" aria-describedby="helpId" placeholder="">
+                                            <small id="helpId" class="form-text text-muted">prenom</small>
+                                          </div>
+
+                                          <div class="mb-3">
+                                            <label for="" class="form-label">EMAIL</label>
+                                            <input type="text" class="form-control form-control-sm" name="" id="" aria-describedby="helpId" placeholder="">
+                                            <small id="helpId" class="form-text text-muted">email</small>
+                                          </div>
+
+                                          <div class="mb-3">
+                                            <label for="" class="form-label">TELEPHONE</label>
+                                            <input type="text" class="form-control form-control-sm" name="" id="" aria-describedby="helpId" placeholder="">
+                                            <small id="helpId" class="form-text text-muted">telephone</small>
+                                          </div>
+                                            <div class="mb-3">
+                                                <label for="" class="form-label">SEXE </label>
+                                                <select class="form-select form-control-sm" aria-label="Default select example">
+                                                <option selected>...</option>
+                                                <option value="1">M</option>
+                                                <option value="2">F</option>
+                                                
+                                            </select>
+                                        </div>
+
+                                       
+                                        
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-sm btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary btn-sm">Sauvegarder</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+
+    <script src="../../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../../assets/js/all.min.js"></script>
+</body>
+
+<footer>
+    <div class="footer">
+        <div>ADDRESS</div>
+        <UL>
+             <li>KIRIRI</li>
+             <li>C.P.RWAGASORE no 100</li>
+        </UL>
+   </div>
+   <div class="footer">
+       <div>CONTACT</div>
+       <UL>
+            <li>61927041</li>
+            <li>manamfashatheogene@gmail.com</li>
+       </UL>  
+  </div>
+  <div class="footer">
+      <div>Sociaux</div>
+       <ul>
+           <li>facebook</li>
+           <li>Twitter</li>
+      </ul>
+
+   </div>
+</footer>
+<style>
+    footer{
+    position: fixed;
+    bottom: 0;
+    background-color:  #212F3D  ;
+    width: 100%;
+    margin-left:16.6%;
+    
+}
+.footer{
+    display:inline-block;
+    padding: 1px;
+    border-left: 1px solid ;
+    width: 32%;
+    padding: 2px;
+    color: white;
+    
+}
+.footer div{
+    font-size: 18px;
+    font-weight: bolder;
+    text-align: center;
+    color: #FBFCFC;
+    
+}
+table{
+    width: 80%;
+    
+}
+tr,table,td,th{
+    
+
+    border: 1px solid #dddddd;
+    padding: 18px;
+    
+}
+</style>
+</html> 
+
+<footer>
+    <div class="footer">
+        <div>ADDRESS</div>
+        <UL>
+             <li>KIRIRI</li>
+             <li>C.P.RWAGASORE no 100</li>
+        </UL>
+   </div>
+   <div class="footer">
+       <div>CONTACT</div>
+       <UL>
+            <li>61927041</li>
+            <li>manamfashatheogene@gmail.com</li>
+       </UL>  
+  </div>
+  <div class="footer">
+      <div>Sociaux</div>
+       <ul>
+           <li>facebook</li>
+           <li>Twitter</li>
+      </ul>
+
+   </div>
+</footer>
+<style>
+    footer{
+    position: fixed;
+    bottom: 0;
+    background-color:  #212F3D  ;
+    width: 100%;
+    margin-left:16.6%;
+    
+}
+
+
+
+.footer{
+    display:inline-block;
+    padding: 1px;
+    border-left: 1px solid ;
+    width: 32%;
+    padding: 2px;
+    color: white;
+    
+}
+
+.footer div{
+    font-size: 18px;
+    font-weight: bolder;
+    text-align: center;
+    color: #FBFCFC;
+    
+}
+
+
+table{
+    width: 80%;
+    
+}
+tr,table,td,th{
+    
+
+    border: 1px solid #dddddd;
+    padding: 18px;
+    
+}
+</style>
+ 
+
+
